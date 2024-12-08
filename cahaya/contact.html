@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .left, .right{
+            flex: 1;
+            margin: 20px;
+            min-width: 300px;
+        }
+
+        .left{
+            max-width: 600px;
+        }
+
+        .right{
+            margin-left: 0;
+            max-width: 600px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 800;
+        }
+        p{
+            font-size: 16px;
+            color: #525252;
+        }
+        .contact-form{
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 13px;
+        }
+        .contact-form h1{
+            font-size: 22px;
+        }
+        .contact-form input, .contact-form textarea{
+            padding: 6px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button{
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .faq{
+            background-color: #fff;
+            padding: 20px;
+        }
+        .faq h1{
+            font-size: 22px;
+        }
+        .faq-question h3{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .faq-answer{
+            font-size: 16px;
+            color: #666;
+        }
+        .faq-answer hr{
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div style="margin-bottom: 70px;">
+                <p style="margin-bottom: 0px; margin-left: 2px;">CONTACT</p>
+                <h1 style="margin-top: 5px;">Get in Touch & Find Quick Answers</h1>
+            </div>
+            <div  class="contact-form">
+                <h1>Contact Us</h1>
+                <p>We're here to assist you. Send us a message, and we'll get back to you soon!</p>
+                <div>
+                    <form>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="4"></textarea><br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div style="margin-top: 20px; margin-left: 18px; margin-bottom: 110px;"> 
+                <p style="font-size: 16px;">Have questions or need assistance? Reach out or check our FAQ for instant answers.</p>
+            </div>
+            <div class="faq">
+                    <h1>Frequently Asked Questions</h1>
+                <div>
+                    <div class="faq-question">
+                        <h3>What is included in the travel package?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        Our packages include accomodation, transportation, and guided tours to four iconic destinations.
+                        <hr>
+                    </div> 
+                </div>
+                <div>
+                    <div class="faq-question">
+                        <h3>Are meals included in the package?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        Breakfast is included at your hotel. Additional meals can be arranged upon request.
+                        <hr>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-question">
+                        <h3>What is the cancellation policy?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        You can cancel up to 7 days before the travel date for a full refund.
+                        <hr>
+                    </div>
+                </div>
+                <div>
+                    <div class="faq-question">
+                        <h3>How do I make a booking?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        Simply fill in the form on this page or click on the "Book Now" button above.
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

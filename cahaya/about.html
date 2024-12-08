@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .left, .right{
+            flex: 1;
+            margin: 20px;
+            min-width: 300px;
+        }
+        .left{
+            max-width: 600px;
+        }
+
+        .right{
+            margin-left: 0;
+            max-width: 600px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: 800;
+        }
+        p{
+            font-size: 16px;
+            color: #525252;
+        }
+        .contact-form{
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 13px;
+        }
+        .contact-form h1{
+            font-size: 22px;
+        }
+        .contact-form input, .contact-form textarea,.contact-form select{
+            width: 100%;
+            padding: 6px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button{
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .faq{
+            background-color: #fff;
+            padding: 20px;
+        }
+        .faq h1{
+            font-size: 22px;
+        }
+        .faq-question h3{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .faq-answer{
+            font-size: 16px;
+            color: #666;
+        }
+        .faq-answer hr{
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .feature {
+            padding: 10px;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .feature img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        .feature h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .feature p {
+            margin: 5px 0 0 0;
+            color: #666;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div style="margin-bottom: 70px;">
+                <p style="margin-bottom: 0px; margin-left: 2px;">ABOUT</p>
+                <h1 style="margin-top: 5px;">Your Gateway to Unforgettable Experiences</h1>
+            </div>
+            <div>
+                <h2>What You Get</h2>
+                <div class="feature">
+                    <img height="40" width="40" src="https://storage.googleapis.com/a1aa/image/3dQBt9G0PDY2CBgxpe8gUq4Txy4e7NPRBGFvaEJJxKj0Wv4TA.jpg" alt="Icon of a map and itinerary">
+                    <div>
+                        <h2>Personalized Itineraries</h2>
+                        <p>Tailored plans to fit your preferences and travel style.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img height="40" width="40" src="https://storage.googleapis.com/a1aa/image/k6uLVemfNcjcRk1f57pbeDIAUt3ffN46nvOIiDh8ZImeZrX8JA.jpg" alt="Icon of a map and itinerary">
+                    <div>
+                        <h2>Seamless Transportation</h2>
+                        <p>Private transfers or detailed guidance on using Singapore’s efficient public transport system.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img height="40" width="40" src="https://storage.googleapis.com/a1aa/image/QrTKdZ4DEBK8IhXH0v7w6zgNXVUAOHYttGKiRpjgKjZs1LeJA.jpg" alt="Icon of a map and itinerary">
+                    <div>
+                        <h2>Expert Local Guides</h2>
+                        <p>Explore hidden gems with local expertise.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img height="40" width="40" src="https://storage.googleapis.com/a1aa/image/y3nR93MvaLpHJxYefvLUPtyxnHq0sOyfWBw3sG0XWkyqteiPB.jpg" alt="Icon of a map and itinerary">
+                    <div>
+                        <h2>Comprehensive Travel Assistance</h2>
+                        <p>From visa guidance to activity bookings, we handle the details so you can focus on exploring.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div style="margin-top: 20px; margin-left: 18px; margin-bottom: 110px;"> 
+                <p style="font-size: 16px;">At Travel, we specialize in crafting personalized travel experiences that allow you to explore the beauty, culture, and innovation of Singapore with ease. Whether you're a solo traveler, couple, or family, we ensure a seamless journey filled with unforgettable memories.</p>
+            </div>
+            <div  class="contact-form">
+                <h1>Ready to Start Your Journey?</h1>
+                <p>Fill in your details, and we'll take care of the rest!</p>
+                <div>
+                    <form>
+                        <label for="fullname">Full Name</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="numbertravelers">Number of Travelers</label><br>
+                        <select>
+                           <option>
+                                1 - 2 Person
+                            </option>
+                            <option>
+                                3 - 4 Person
+                            </option>
+                            <option>
+                                 5+ Person
+                            </option>
+                        </select><br>
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" rows="4"></textarea><br>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
