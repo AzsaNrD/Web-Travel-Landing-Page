@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'GeistSans';
+  src: url('../font/GeistVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'GeistSans', sans-serif;
+}
