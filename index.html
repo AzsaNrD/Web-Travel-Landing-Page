@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <header>
         <!-- #TODO: Navbar -->
-         <h1>Travel</h1>
       </header>
 
       <main>
@@ -20,12 +22,217 @@
         <!-- #TODO: Destinations Section -->
 
         <!-- #TODO: About Section -->
+        <section id="about" class="about">
+          <div class="about__container">
+            <div class="about__left">
+              <div class="about__header">
+                <p class="about__label">ABOUT</p>
+                <h1 class="about__title">Your Gateway to Unforgettable Experiences</h1>
+              </div>
+              <div class="about__content">
+                <h2 class="about__subtitle">What You Get</h2>
+                <div class="about__feature">
+                  <img
+                    class="about__feature-icon"
+                    src="https://storage.googleapis.com/a1aa/image/3dQBt9G0PDY2CBgxpe8gUq4Txy4e7NPRBGFvaEJJxKj0Wv4TA.jpg"
+                    alt="Icon of a map and itinerary"
+                  />
+                  <div>
+                    <h2 class="about__feature-title">Personalized Itineraries</h2>
+                    <p class="about__feature-description">
+                      Tailored plans to fit your preferences and travel style.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__feature">
+                  <img
+                    class="about__feature-icon"
+                    src="https://storage.googleapis.com/a1aa/image/k6uLVemfNcjcRk1f57pbeDIAUt3ffN46nvOIiDh8ZImeZrX8JA.jpg"
+                    alt="Icon of a map and itinerary"
+                  />
+                  <div>
+                    <h2 class="about__feature-title">Seamless Transportation</h2>
+                    <p class="about__feature-description">
+                      Private transfers or detailed guidance on using Singapore’s efficient public
+                      transport system.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__feature">
+                  <img
+                    class="about__feature-icon"
+                    src="https://storage.googleapis.com/a1aa/image/QrTKdZ4DEBK8IhXH0v7w6zgNXVUAOHYttGKiRpjgKjZs1LeJA.jpg"
+                    alt="Icon of a map and itinerary"
+                  />
+                  <div>
+                    <h2 class="about__feature-title">Expert Local Guides</h2>
+                    <p class="about__feature-description">
+                      Explore hidden gems with local expertise.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__feature">
+                  <img
+                    class="about__feature-icon"
+                    src="https://storage.googleapis.com/a1aa/image/y3nR93MvaLpHJxYefvLUPtyxnHq0sOyfWBw3sG0XWkyqteiPB.jpg"
+                    alt="Icon of a map and itinerary"
+                  />
+                  <div>
+                    <h2 class="about__feature-title">Comprehensive Travel Assistance</h2>
+                    <p class="about__feature-description">
+                      From visa guidance to activity bookings, we handle the details so you can
+                      focus on exploring.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__pricing">
+                <div class="about__pricing-details">
+                  <p>Starting from <strong>672$/person!</strong></p>
+                  <p>Save up to <strong>45%!</strong></p>
+                </div>
+                <div class="about__countdown">
+                  <div class="about__countdown-item">10<br /><span>Days</span></div>
+                  <div class="about__countdown-item">17<br /><span>Hrs</span></div>
+                  <div class="about__countdown-item">19<br /><span>Min</span></div>
+                  <div class="about__countdown-item">45<br /><span>Sec</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="about__right">
+              <div class="about__description">
+                <p>
+                  At Travel, we specialize in crafting personalized travel experiences that allow
+                  you to explore the beauty, culture, and innovation of Singapore with ease.
+                </p>
+              </div>
+              <div class="about__contact-form">
+                <h1 class="about__contact-title">Ready to Start Your Journey?</h1>
+                <p class="about__contact-description">
+                  Fill in your details, and we'll take care of the rest!
+                </p>
+                <form class="about__form">
+                  <label class="about__form-label" for="fullname">Full Name</label><br />
+                  <input class="about__form-input" type="text" id="name" name="name" /><br />
+                  <label class="about__form-label" for="email">Email</label><br />
+                  <input class="about__form-input" type="email" id="email" name="email" /><br />
+                  <label class="about__form-label" for="numbertravelers">Number of Travelers</label
+                  ><br />
+                  <select class="about__form-select">
+                    <option>1 - 2 Person</option>
+                    <option>3 - 4 Person</option>
+                    <option>5+ Person</option></select
+                  ><br />
+                  <label class="about__form-label" for="message">Message</label><br />
+                  <textarea
+                    class="about__form-textarea"
+                    id="message"
+                    name="message"
+                    rows="4"
+                  ></textarea
+                  ><br />
+                  <button class="about__form-button" type="submit">Book Now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- #TODO: Contact Section -->
+        <section class="contact">
+          <div class="contact__container">
+            <div class="contact__left">
+              <div class="contact__header">
+                <p class="contact__label">CONTACT</p>
+                <h1 class="contact__title">Get in Touch & Find Quick Answers</h1>
+              </div>
+              <div class="contact__form">
+                <h1 class="contact__form-title">Contact Us</h1>
+                <p class="contact__form-description">
+                  We're here to assist you. Send us a message, and we'll get back to you soon!
+                </p>
+                <form class="contact__form-body">
+                  <label class="contact__form-label" for="name">Name</label><br />
+                  <input class="contact__form-input" type="text" id="name" name="name" /><br />
+                  <label class="contact__form-label" for="email">Email</label><br />
+                  <input class="contact__form-input" type="email" id="email" name="email" /><br />
+                  <label class="contact__form-label" for="message">Message</label><br />
+                  <textarea
+                    class="contact__form-textarea"
+                    id="message"
+                    name="message"
+                    rows="4"
+                  ></textarea
+                  ><br />
+                  <button class="contact__form-button" type="submit">Send Message</button>
+                </form>
+              </div>
+            </div>
+            <div class="contact__right">
+              <div class="contact__description">
+                <p>
+                  Have questions or need assistance? Reach out or check our FAQ for instant answers.
+                </p>
+              </div>
+              <div class="faq">
+                <h1 class="faq__title">Frequently Asked Questions</h1>
+                <div class="faq__item">
+                  <div class="faq__question">
+                    <h3>What is included in the travel package?</h3>
+                  </div>
+                  <div class="faq__answer">
+                    Our packages include accommodation, transportation, and guided tours to four
+                    iconic destinations.
+                    <hr />
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question">
+                    <h3>Are meals included in the package?</h3>
+                  </div>
+                  <div class="faq__answer">
+                    Breakfast is included at your hotel. Additional meals can be arranged upon
+                    request.
+                    <hr />
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question">
+                    <h3>What is the cancellation policy?</h3>
+                  </div>
+                  <div class="faq__answer">
+                    You can cancel up to 7 days before the travel date for a full refund.
+                    <hr />
+                  </div>
+                </div>
+                <div class="faq__item">
+                  <div class="faq__question">
+                    <h3>How do I make a booking?</h3>
+                  </div>
+                  <div class="faq__answer">
+                    Simply fill in the form on this page or click on the "Book Now" button above.
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer>
-        <!-- #TODO: Footer -->
+      <footer class="footer">
+        <div class="footer__left">
+          <h1 class="footer__title">Travel</h1>
+          <p class="footer__description">Explore the Greatness of Singapore with Ease.</p>
+        </div>
+        <div class="footer__right">
+          <div class="footer__social-icons">
+            <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="footer__copyright">© 2024 Travel. All rights reserved.</div>
+        </div>
       </footer>
     </div>
   </body>
