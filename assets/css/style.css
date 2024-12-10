@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'GeistSans';
   src: url('../font/GeistVF.woff') format('woff');
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 
@@ -15,10 +15,199 @@ body {
   font-family: 'GeistSans', sans-serif;
 }
 
-main {
+.container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
   gap: 120px;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+}
+
+.hero__content {
+  margin-bottom: 24px;
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.hero__description {
+  color: #525252;
+}
+
+.hero__image {
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.statistics {
+  display: flex;
+  gap: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.statistics__item {
+  background-color: #fafafa;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 20px 0;
+  width: 250px;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.statistics__value {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.statistics__label {
+  color: #525252;
+}
+
+/* DESTINATIONS SECTION */
+.destinations {
+  margin-top: 25px;
+}
+
+.destinations__header {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  line-height: 162.5%;
+  margin-bottom: 56px;
+}
+
+.destinations__title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #525252;
+  margin-bottom: 6px;
+}
+
+.destinations__label {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.destinations__description {
+  color: #525252;
+}
+
+.destinations__content {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.destinations__card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.destinations__card:hover > .destinations__card-image {
+  transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  -moz-transform: scale(1.025);
+  -ms-transform: scale(1.025);
+  -o-transform: scale(1.025);
+}
+
+.destinations__card-meta {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  left: 24px;
+  top: 24px;
+}
+
+.destinations__card-tag {
+  background-color: rgba(250, 250, 250, 0.1)  ;
+  padding: 10px 20px;
+  backdrop-filter: blur(5px);
+  border: 1px solid #FAFAFA;
+  font-size: 14px;
+  color: #FAFAFA;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.destinations__card-body {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+
+.destinations__card-name {
+  font-size: 24px;
+  color: #FAFAFA;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.destinations__card-description {
+  color: #FAFAFA;
+}
+
+/* Card Container */
+.destinations__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 324px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.destinations__card--span-3 {
+  grid-column: span 3;
+}
+
+.destinations__card--span-2 {
+  grid-column: span 2;
 }
 
 /* ABOUT SECTION */
@@ -265,7 +454,6 @@ main {
   margin: 10px 0;
 }
 
-
 /* FOOTER */
 .footer {
   background-color: #1a1a1a;
@@ -273,6 +461,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .footer__title {
