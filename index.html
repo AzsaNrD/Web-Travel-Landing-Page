@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -13,9 +14,18 @@
   <body>
     <div class="container">
       <header>
-        <!-- #TODO: Navbar -->
+        <h1 class="header__title">TRAVEL</h1>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#hero" class="header__nav-link">EXPLORE</a></li>
+            <li class="header__nav-item">
+              <a href="#destinations" class="header__nav-link">DESTINATIONS</a>
+            </li>
+            <li class="header__nav-item"><a href="#about" class="header__nav-link">ABOUT</a></li>
+            <li class="header__nav-item"><a href="#contact" class="header__nav-link">CONTACT</a></li>
+          </ul>
+        </nav>
       </header>
-
       <main>
         <!-- #TODO: Hero Section -->
         <section id="hero" class="hero">
@@ -262,7 +272,7 @@
         </section>
 
         <!-- #TODO: Contact Section -->
-        <section class="contact">
+        <section id="contact" class="contact">
           <div class="contact__container">
             <div class="contact__left">
               <div class="contact__header">
