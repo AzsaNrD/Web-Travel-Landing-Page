@@ -22,12 +22,14 @@
               <a href="#destinations" class="header__nav-link">DESTINATIONS</a>
             </li>
             <li class="header__nav-item"><a href="#about" class="header__nav-link">ABOUT</a></li>
-            <li class="header__nav-item"><a href="#contact" class="header__nav-link">CONTACT</a></li>
+            <li class="header__nav-item">
+              <a href="#contact" class="header__nav-link">CONTACT</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main>
-        <!-- #TODO: Hero Section -->
+        <!-- Hero Section -->
         <section id="hero" class="hero">
           <div class="hero__content">
             <h2 class="hero__title">EXPLORE THE GREATNESS</h2>
@@ -52,14 +54,14 @@
                 <p class="statistics__label">Total Trips</p>
               </div>
               <div class="statistics__item">
-                <p class="statistics__value">4.9K+</p>
+                <p class="statistics__value">4.9</p>
                 <p class="statistics__label">Overall Rating</p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- #TODO: Destinations Section -->
+        <!-- Destinations Section -->
         <section id="destinations" class="destinations">
           <div class="destinations__header">
             <div class="destinations__title-container">
@@ -78,7 +80,6 @@
                 alt="Marina Bay Sands"
                 class="destinations__card-image"
               />
-
               <div class="destinations__card-meta">
                 <p class="destinations__card-tag">Marina Bay</p>
                 <p class="destinations__card-tag">Landmark</p>
@@ -98,12 +99,10 @@
                 alt="Marina Gardens Drive"
                 class="destinations__card-image"
               />
-
               <div class="destinations__card-meta">
                 <p class="destinations__card-tag">Marina Gardens Drive</p>
                 <p class="destinations__card-tag">Urban Park</p>
               </div>
-
               <div class="destinations__card-body">
                 <p class="destinations__card-name">Gardens by the Bay</p>
                 <p class="destinations__card-description">
@@ -118,12 +117,10 @@
                 alt="Sentosa Island"
                 class="destinations__card-image"
               />
-
               <div class="destinations__card-meta">
                 <p class="destinations__card-tag">Sentosa Island</p>
                 <p class="destinations__card-tag">Island</p>
               </div>
-
               <div class="destinations__card-body">
                 <p class="destinations__card-name">Sentosa Island</p>
                 <p class="destinations__card-description">
@@ -138,14 +135,12 @@
                 alt="Chinatown"
                 class="destinations__card-image"
               />
-
               <div class="destinations__card-meta">
                 <p class="destinations__card-tag">Chinatown</p>
                 <p class="destinations__card-tag">Cultural</p>
               </div>
-
               <div class="destinations__card-body">
-                <p class="destinations__card-name">Sentosa</p>
+                <p class="destinations__card-name">Chinatown</p>
                 <p class="destinations__card-description">
                   Dive into vibrant cultural enclaves brimming with history and flavors.
                 </p>
@@ -154,16 +149,22 @@
           </div>
         </section>
 
-        <!-- #TODO: About Section -->
+        <!-- About Section -->
         <section id="about" class="about">
-          <div class="about__container">
-            <div class="about__left">
-              <div class="about__header">
-                <p class="about__label">ABOUT</p>
-                <h1 class="about__title">Your Gateway to Unforgettable Experiences</h1>
-              </div>
-              <div class="about__content">
-                <h2 class="about__subtitle">What You Get</h2>
+          <div class="about__header">
+            <div class="about__title-container">
+              <h2 class="about__title">ABOUT</h2>
+              <p class="about__label">Your Gateway to Unforgettable Experiences</p>
+            </div>
+            <p class="about__description">
+              At Travel, we specialize in crafting personalized travel experiences that allow you to
+              explore the beauty, culture, and innovation of Singapore with ease.
+            </p>
+          </div>
+          <div class="about__content">
+            <div>
+              <h2 class="about__subtitle">What You Get</h2>
+              <div class="about__features">
                 <div class="about__feature">
                   <img
                     class="about__feature-icon"
@@ -225,148 +226,169 @@
                   <p>Save up to <strong>45%!</strong></p>
                 </div>
                 <div class="about__countdown">
-                  <div class="about__countdown-item">10<br /><span>Days</span></div>
-                  <div class="about__countdown-item">17<br /><span>Hrs</span></div>
-                  <div class="about__countdown-item">19<br /><span>Min</span></div>
-                  <div class="about__countdown-item">45<br /><span>Sec</span></div>
+                  <div class="about__countdown-item">
+                    <span class="about__countdown-number">00</span>
+                    <span class="about__countdown-label">Days</span>
+                  </div>
+                  <div class="about__countdown-item">
+                    <span class="about__countdown-number">00</span>
+                    <span class="about__countdown-label">Hrs</span>
+                  </div>
+                  <div class="about__countdown-item">
+                    <span class="about__countdown-number">00</span>
+                    <span class="about__countdown-label">Min</span>
+                  </div>
+                  <div class="about__countdown-item">
+                    <span class="about__countdown-number">00</span>
+                    <span class="about__countdown-label">Sec</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="about__right">
-              <div class="about__description">
-                <p>
-                  At Travel, we specialize in crafting personalized travel experiences that allow
-                  you to explore the beauty, culture, and innovation of Singapore with ease.
-                </p>
-              </div>
-              <div class="about__contact-form">
-                <h1 class="about__contact-title">Ready to Start Your Journey?</h1>
-                <p class="about__contact-description">
+            <div class="about__book-form">
+              <div class="about__book-header">
+                <h1 class="about__book-title">Ready to Start Your Journey?</h1>
+                <p class="about__book-description">
                   Fill in your details, and we'll take care of the rest!
                 </p>
-                <form class="about__form">
-                  <label class="about__form-label" for="fullname">Full Name</label><br />
-                  <input class="about__form-input" type="text" id="name" name="name" /><br />
-                  <label class="about__form-label" for="email">Email</label><br />
-                  <input class="about__form-input" type="email" id="email" name="email" /><br />
-                  <label class="about__form-label" for="numbertravelers">Number of Travelers</label
-                  ><br />
-                  <select class="about__form-select">
-                    <option>1 - 2 Person</option>
-                    <option>3 - 4 Person</option>
-                    <option>5+ Person</option></select
-                  ><br />
-                  <label class="about__form-label" for="message">Message</label><br />
-                  <textarea
-                    class="about__form-textarea"
-                    id="message"
-                    name="message"
-                    rows="4"
-                  ></textarea
-                  ><br />
-                  <button class="about__form-button" type="submit">Book Now</button>
-                </form>
               </div>
+              <form class="about__form" onsubmit="handleFormSubmit(event)">
+                <label class="about__form-label" for="fullname">Full Name</label><br />
+                <input class="about__form-input" type="text" id="name" name="name" required /><br />
+                <label class="about__form-label" for="email">Email</label><br />
+                <input
+                  class="about__form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                /><br />
+                <label class="about__form-label" for="numbertravelers">Number of Travelers</label
+                ><br />
+                <select class="about__form-select" required>
+                  <option>1 - 2 Person</option>
+                  <option>3 - 4 Person</option>
+                  <option>5+ Person</option></select
+                ><br />
+                <label class="about__form-label" for="message">Message</label><br />
+                <textarea
+                  class="about__form-textarea"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea
+                ><br />
+                <button class="about__form-button" type="submit">Book Now</button>
+              </form>
+              <div class="form-book-result"></div>
             </div>
           </div>
         </section>
 
-        <!-- #TODO: Contact Section -->
+        <!-- Contact Section -->
         <section id="contact" class="contact">
-          <div class="contact__container">
-            <div class="contact__left">
-              <div class="contact__header">
-                <p class="contact__label">CONTACT</p>
-                <h1 class="contact__title">Get in Touch & Find Quick Answers</h1>
-              </div>
-              <div class="contact__form">
-                <h1 class="contact__form-title">Contact Us</h1>
-                <p class="contact__form-description">
-                  We're here to assist you. Send us a message, and we'll get back to you soon!
-                </p>
-                <form class="contact__form-body">
-                  <label class="contact__form-label" for="name">Name</label><br />
-                  <input class="contact__form-input" type="text" id="name" name="name" /><br />
-                  <label class="contact__form-label" for="email">Email</label><br />
-                  <input class="contact__form-input" type="email" id="email" name="email" /><br />
-                  <label class="contact__form-label" for="message">Message</label><br />
-                  <textarea
-                    class="contact__form-textarea"
-                    id="message"
-                    name="message"
-                    rows="4"
-                  ></textarea
-                  ><br />
-                  <button class="contact__form-button" type="submit">Send Message</button>
-                </form>
-              </div>
+          <div class="contact__header">
+            <div class="contact__title-container">
+              <h2 class="contact__title">CONTACT</h2>
+              <p class="contact__label">Get in Touch & Find Quick Answers</p>
             </div>
-            <div class="contact__right">
-              <div class="contact__description">
-                <p>
-                  Have questions or need assistance? Reach out or check our FAQ for instant answers.
+            <p class="contact__description">
+              Have questions or need assistance? Reach out or check our FAQ for instant answers.
+              We're here to help!
+            </p>
+          </div>
+          <div class="contact__content">
+            <div class="contact__form-container">
+              <div class="contact__form-header">
+                <h3 class="contact__form-title">Contact Us</h3>
+                <p class="contact__form-description">
+                  Send us a message, and we’ll get back to you soon!
                 </p>
               </div>
-              <div class="faq">
-                <h1 class="faq__title">Frequently Asked Questions</h1>
-                <div class="faq__item">
-                  <div class="faq__question">
-                    <h3>What is included in the travel package?</h3>
-                  </div>
-                  <div class="faq__answer">
-                    Our packages include accommodation, transportation, and guided tours to four
-                    iconic destinations.
-                    <hr />
-                  </div>
-                </div>
-                <div class="faq__item">
-                  <div class="faq__question">
-                    <h3>Are meals included in the package?</h3>
-                  </div>
-                  <div class="faq__answer">
-                    Breakfast is included at your hotel. Additional meals can be arranged upon
-                    request.
-                    <hr />
-                  </div>
-                </div>
-                <div class="faq__item">
-                  <div class="faq__question">
-                    <h3>What is the cancellation policy?</h3>
-                  </div>
-                  <div class="faq__answer">
-                    You can cancel up to 7 days before the travel date for a full refund.
-                    <hr />
-                  </div>
-                </div>
-                <div class="faq__item">
-                  <div class="faq__question">
-                    <h3>How do I make a booking?</h3>
-                  </div>
-                  <div class="faq__answer">
-                    Simply fill in the form on this page or click on the "Book Now" button above.
-                    <hr />
-                  </div>
-                </div>
+              <form class="contact__form" onsubmit="handleFormContactSubmit(event)">
+                <label class="contact__form-label" for="name">Name</label><br />
+                <input
+                  class="contact__form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                /><br />
+                <label class="contact__form-label" for="email">Email</label><br />
+                <input
+                  class="contact__form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                /><br />
+                <label class="contact__form-label" for="message">Message</label><br />
+                <textarea
+                  class="contact__form-textarea"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea
+                ><br />
+                <button class="contact__form-button" type="submit">Send Message</button>
+              </form>
+              <div class="form-contact-result"></div>
+            </div>
+            <div class="faq">
+              <h3 class="faq__title">Frequently Asked Questions</h3>
+              <div class="faq__item">
+                <h4 class="faq__question">What is included in the travel package?</h4>
+                <p class="faq__answer">
+                  Our packages include accommodation, transportation, and guided tours to four
+                  iconic destinations.
+                </p>
+              </div>
+              <hr />
+              <div class="faq__item">
+                <h4 class="faq__question">Are meals included in the package?</h4>
+                <p class="faq__answer">
+                  Breakfast is included at your hotel. Additional meals can be arranged upon
+                  request.
+                </p>
+              </div>
+              <hr />
+              <div class="faq__item">
+                <h4 class="faq__question">What is the cancellation policy?</h4>
+                <p class="faq__answer">
+                  You can cancel up to 7 days before the travel date for a full refund.
+                </p>
+              </div>
+              <hr />
+              <div class="faq__item">
+                <h4 class="faq__question">How do I make a booking?</h4>
+                <p class="faq__answer">
+                  Simply fill in the form on this page or click on the "Book Now" button above.
+                </p>
               </div>
             </div>
           </div>
         </section>
       </main>
-
-      <footer class="footer">
-        <div class="footer__left">
-          <h1 class="footer__title">Travel</h1>
-          <p class="footer__description">Explore the Greatness of Singapore with Ease.</p>
-        </div>
-        <div class="footer__right">
-          <div class="footer__social-icons">
-            <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+      <footer>
+        <div class="footer__content">
+          <div>
+            <h1 class="footer__title">Travel</h1>
+            <p class="footer__description">Explore the Greatness of Singapore with Ease.</p>
           </div>
-          <div class="footer__copyright">© 2024 Travel. All rights reserved.</div>
+          <div>
+            <div class="footer__social-icons">
+              <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="footer__social-link"><i class="fab fa-whatsapp"></i></a>
+              <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer__copyright">© 2024 Travel. All rights reserved.</div>
+          </div>
         </div>
       </footer>
     </div>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
