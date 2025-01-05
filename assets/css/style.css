@@ -490,3 +490,9 @@ footer {
 .footer__social-link:hover {
   color: var(--neutral-400);
 }
+
+.form-book-result, .form-contact-result {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
